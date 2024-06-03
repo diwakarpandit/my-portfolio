@@ -1,17 +1,35 @@
 
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
-  let nvItems = ['Home' , 'Experience' , 'Skills','Contact']
+  const nvItems = [
+    { name: 'Home', to: 'home' },
+    { name: 'Skills', to: 'skills' },
+    { name: 'Experience', to: 'experience' },
+    { name: 'Contact', to: 'contact' },
+    { name: 'Resume'}
+  ];
+
   return (
-    <div className="flex justify-around items-center p-4 ">
+    <div className="flex justify-around items-center p-4" id='nav'>
       <div>
-        <h1 className="font-semibold text-purple-200 rounded-full border-2 border-white p-2 ">DP</h1>
+        <h1 className="font-semibold text-purple-200 rounded-full border-2 border-white p-2">DP</h1>
       </div>
       <div className="flex gap-6">
-        {nvItems.map((x , index) => <p key={index} className="text-md text-white cursor-pointer hover:text-purple-200">{x}</p> )}
+        {nvItems.map((item, index) => (
+          <Link
+            key={index}
+            to={item.to}
+            smooth={true}
+            duration={500}
+            className="text-md text-white cursor-pointer hover:text-purple-200"
+          >
+            {item.name}
+          </Link>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
