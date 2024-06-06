@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <>
     <h1 className="text-white bg-purple-900 text-2xl text-center pt-2 ">{h}</h1>
-    <div id="experience" className="bg-purple-900 p-2 py-4 flex gap-3 flex-col justify-center items-center lg:flex-row h-[40vh]">
+    <div id="experience" className="bg-purple-900 p-2  flex gap-3 flex-col justify-center items-center lg:flex-row min-h-[40vh]">
       <div className="border-2 rounded-md border-white p-4 lg:w-[30%] flex flex-col gap-2">
         <h1 className="text-white">Freelance, Event Management</h1>
         <p className="text-white font-thin">2016 - present</p>
