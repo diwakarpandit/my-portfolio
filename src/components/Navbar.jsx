@@ -1,13 +1,14 @@
 
 import { Link } from 'react-scroll';
 
+
 const Navbar = () => {
   const nvItems = [
     { name: 'Home', to: 'home' },
     { name: 'Skills', to: 'skills' },
     { name: 'Experience', to: 'experience' },
     { name: 'Contact', to: 'contact' },
-    { name: 'Resume'}
+    
   ];
 
   return (
@@ -27,6 +28,8 @@ const Navbar = () => {
             {item.name}
           </Link>
         ))}
+
+        <a className="text-md text-white cursor-pointer hover:text-purple-200" href='Resume.pdf' target='blank'>Resume</a>
       </div>
     </div>
   );

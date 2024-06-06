@@ -3,7 +3,7 @@ import Hero from './components/Hero'
 import Experience from './components/Experience'
 import './App.css'
 import Skills from './components/Skills'
-import Footer from './components/Footer'
+
 import Contact from './components/Contact'
 
 export default function App() {
@@ -14,7 +14,6 @@ export default function App() {
      <Skills/>
      <Experience/>
      <Contact/>
-     <Footer/>
-    </div>
+     </div>
   )
 }
